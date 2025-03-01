@@ -2,7 +2,6 @@ function solution(a, b, c, d) {
     let box = [a, b, c, d];
     box.sort((a,b) => a - b)
     let unOverlapBox = [...new Set(box)]
-    console.log(unOverlapBox)
     if(unOverlapBox.length === 1) return 1111 * box[0]    // 4개 같은 경우
     if(box[1] === box[2] && unOverlapBox.length === 2) {    // 3개 같은 경우
         if(box[0] === box[1]) { // 2 2 2 4
@@ -23,7 +22,7 @@ function solution(a, b, c, d) {
     if(box[1] !== box[2] && unOverlapBox.length === 2) {    // 맞는 2개가 2세트 인경우
        return (box[2] + box[1]) * (box[2] - box[1])     // 2 2 3 3
     }    
-    if(unOverlapBox.length === 4) return box[0]    // 모두 다른 경우
+    return box[0]    // 모두 다른 경우
 }
 
 /*
