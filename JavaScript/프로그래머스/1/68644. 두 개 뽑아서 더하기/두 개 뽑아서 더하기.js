@@ -1,5 +1,4 @@
 function solution(numbers) {
-    var answer = [];
     let box = []
     
     for (let i = 0; i < numbers.length; i++) {
