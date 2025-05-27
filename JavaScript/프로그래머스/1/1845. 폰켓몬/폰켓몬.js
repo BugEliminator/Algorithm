@@ -1,12 +1,11 @@
 function solution(nums) {
-    var answer = 0;
-    let result    
-    let a = nums.length / 2 // 골라야 하는 수
-    let b = [...new Set(nums)].length // nums에서 중복지운값
-    result = a > b ? result = b : result =  a
-    return result
+  var answer = 0;
+  let result;
+  let a = nums.length / 2; // 골라야 하는 수
+  let b = [...new Set(nums)].length; // nums에서 중복지운값
+  result = a > b ? (result = b) : (result = a);
+  return result;
 }
-
 
 // [3', 1, 2, 3]
 
