@@ -1,0 +1,2 @@
+git pull --rebase origin main
+깃 병합 문제 생길때
